@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Foot and Ball Academy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="./images/site.webmanifest">
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-blue w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="" class="w3-bar-item w3-button w3-padding-large">Home</a>
+
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">Programs <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">School terms</a>
+          <a href="#" class="w3-bar-item w3-button">Private sessions </a>
+          <a href="#" class="w3-bar-item w3-button">Register now</a>
+        </div>
+      </div>
+     
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">About Us <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#" class="w3-bar-item w3-button">Location</a>
+          <a href="#" class="w3-bar-item w3-button">Our Philosophy </a>
+          <a href="#" class="w3-bar-item w3-button">Staff</a>
+        </div>
+      </div>
+
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">News</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Terms and Conditions</a>
+
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right">Register now</i></a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Home</a>
+    <a href="#register" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Register</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+      <img src="./images/logo.png" style="width:50%">
+      <!-- <img src="./images/grass_banner.jpg" style="width:100%"> -->
+      <!-- <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small"> -->
+        <!-- <h1>Foot And Ball Academy</h1> -->
+        <!-- <h1>Foot and Ball Academy</h1> -->
+        <!-- <p><b>We like football.</b></p> -->
+      <!-- </div> -->
+    </div>
+
+
+    <!-- The Band Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+      <h2 class="w3-wide">About</h2>
+      <p class="w3-opacity"><i>We like to teach soccer</i></p>
+      <div class="w3-half">
+        <p class="w3-justify">Soccer, football, whatever. Let's play</p>
+      </div>
+      <div class="w3-half">
+        <img src="./images/logo.png" class="w3-round w3-margin-bottom avatar" alt="Nicholas Barnett-Moore Name"
+          style="width:40%">
+      </div>
+      <div class="w3-row w3-padding-32">
+        <!-- <div class="w3-third">
+        <p>Chief Hacker: Nate</p>
+        <img src="./images/nate.png" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div> -->
+        <div class="w3-center">
+          <p>Head Trainer: Nick</p>
+          <img src="./images/nick.jpg" class="w3-round w3-margin-bottom avatar" alt="Nicholas Barnett-Moore Name"
+            style="width:40%">
+          <p>
+            A beautiful man and wonderful coach. He will yell at your kids with just the right amount of enthusiasm. 30
+            years of playing experience including representive experience in England. Captain of Madsen Magic.
+          </p>
+
+          <p>Fully certified</p>
+          <div class="w3-left-align">
+            <ul class="a">
+              <li><a href="./images/Barnett-Moore_WWCC_2022.pdf">Working With Children Check </a></li>
+              <li><a href="./images/Barnett-Moore_PoliceCheck_2022.pdf">NSW Police Check</a></li>
+              <li> <a href="./images/Barnett-Moore_MiniRoos_Cert.pdf">Miniroos Training Qualification</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- <div class="w3-third">
+        <p>MVP: Avalon</p>
+        <img src="./images/av.png" class="w3-round" alt="Random Name" style="width:60%">
+      </div> -->
+      </div>
+    </div>
+
+    <!-- The Tour Section -->
+    <div class="w3-blue w3-center" id="register">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">Sign up today</h2>
+
+        <img src="./images/corner.jpg" class="w3-round w3-margin-bottom" alt="Advanced technical training"
+          style="width:50%">
+
+        <div class="w3-row-padding w3-padding-32">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeRvlnhiPkzMuL6IVzWFk27NQrQ-XeQI1GzXWZ_3tCsFrfLFA/viewform?embedded=true"
+            width="80%" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <img src="./images/child.jpg" class="w3-round w3-margin-bottom" alt="Active kids are smart kids" style="width:50%">
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-center w3-padding-32">
+      <div class="w3-col w3-left-align w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Richmond, NSW<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +61 452 583 279<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@footandball.com.au<br>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Page Content -->
+  </div>
+
+  <!-- Image of location/map -->
+  <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
