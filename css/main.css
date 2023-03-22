@@ -5,10 +5,10 @@ body{
 
 }
 .navbar {
-	background:#000;
+	background:#4274AD;
 }
 .navbar-nav  li a:hover {
-	color:#fff !important;
+	color:#41B8FC !important;
 }
 .navbar .webT{
 	font-size: 20px;
@@ -19,7 +19,7 @@ body{
 	height: 500px;
 }
 .crs-img-1{
-	background: url('../img/slider-img1.jpg');
+	background: url('../img/kids1.jpg');
 	background-size: cover;
 	background-position: center;
 	width:100%;
@@ -52,7 +52,7 @@ body{
 
 /*Get Started*/
 #get-started{
-	background:url('../img/showcase2.jpg');
+	background:url('../img/football3-min.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
@@ -109,23 +109,24 @@ body{
 /*Footer*/
 #footer{
 	background:#000;
+	font-size:0.8rem;
 }
 #footer .fab{
-	font-size:25px;
+	font-size:18px;
 	color:#fff;
-	border: 1px solid #7f8c8d;
-	padding: 5px;
+	/* border: 1px solid #7f8c8d; */
+	padding: 2px;
 }
 #footer .fab:hover{
 	color: #ff0000;
-	border-color: #000;
+	/* border-color: #000; */
 }
 
 /*About Page*/
 
 /*About Section*/
 #about{
-	background:url('../img/football2.jpg');
+	background:url('../img/football3-min.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -148,7 +149,7 @@ body{
 /*Services Section*/
 /*Services Header*/
 #services{
-	background:url('../img/slider-img4.jpg');
+	background:url('../img/football3-min.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;

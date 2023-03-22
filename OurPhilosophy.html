@@ -15,61 +15,9 @@
 
 <body>
 
-	<!-- Navbar Section Start -->
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4274AD;"
-		uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
-		<div class="container">
-			<a href="index.html" class="navbar-brand">
-				<img src="./img/logo-long.png" class="img-fluid p-0" style="height: 40px; ">
-				<!-- <div class="ml-2 p-0 d-inline webT">Glozzome</div> -->
-			</a>
-			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navBar">
-				<ul class="navbar-nav  ml-auto ">
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Programs
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="SchoolTerms.html">School Terms</a>
-							<a class="dropdown-item" href="PrivateSessions.html">Private Sessions</a>
-							<a class="dropdown-item" href="RegisterNow.html">Register Now</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							About Us
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="Location.html">Location</a>
-							<a class="dropdown-item" href="OurPhilosophy.html">Our Philosophy</a>
-							<a class="dropdown-item" href="Staff.html">Staff</a>
-						</div>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="News.html">News</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ContactUs.html">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="TOS.html">Terms and Conditions</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" style="text-shadow: 2px 2px 2px #08e0f8;" href="RegisterNow.html"><b>Register Now</b></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<!-- Nav Section Start -->
+	<div id="nav-placeholder"></div>
 	<!-- Nav Section End -->
-
 
 	<!-- About Section Start -->
 	<section id="about" class="text-center py-5 text-light">
@@ -113,7 +61,7 @@
 
 				</div>
 				<div class="col-lg-6 col-md-6 align-self-center text-center">
-					<img src="img/kids3.jpg" class="img-fluid w-50 h-70 ">
+					<img src="img/soccer8.jpg" class="img-fluid">
 				</div>
 			</div>
 		</div>
@@ -147,7 +95,7 @@
 			<div class="row">
 
 				<div class="col-lg-6 col-md-6 align-self-center text-center">
-					<img src="img/kids3.jpg" class="img-fluid w-50 h-70 ">
+					<img src="img/kids3-min.jpg" class="img-fluid">
 				</div>
 
 				<div class="col-lg-6 col-md-6  align-self-center">
@@ -166,7 +114,7 @@
 				<div class="row">
 
 					<div class="col-lg-6 col-md-6 align-self-center text-center">
-						<img src="img/kids3.jpg" class="img-fluid w-50 h-70 ">
+						<img src="img/soccer1.jpg" class="img-fluid ">
 					</div>
 
 					<div class="col-lg-6 col-md-6  align-self-center">
@@ -271,13 +219,13 @@
 				</div>
 
 				<div class="col-lg-6 col-md-6 align-self-center text-center">
-					<img src="img/kidschill.jpg" class="img-fluid w-50 h-70 ">
+					<img src="img/kidschill.jpg" class="img-fluid">
 				</div>
 
 				<div class="row">
 
 					<div class="col-lg-6 col-md-6 align-self-center text-center">
-						<img src="img/football4.jpg" class="img-fluid w-50 h-70 ">
+						<img src="img/football4-min.jpg" class="img-fluid">
 					</div>
 
 					<div class="col-lg-6 col-md-6  align-self-center">
@@ -314,12 +262,17 @@
 	<!-- About Info Section End -->
 
 
+	<!-- Footer Section Start -->
+	<div id="foot-placeholder"></div>
+	<!-- Footer Section Start -->
 
-	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/uikit.min.js"></script>
 	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
-</body>
+	<script>$(function(){$("#nav-placeholder").load("navbar.html");});</script>
+	<script>$(function(){$("#foot-placeholder").load("footer.html");});</script>
 
+</body>
 </html>

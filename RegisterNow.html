@@ -15,69 +15,17 @@
 
 <body>
 
-	<!-- Navbar Section Start -->
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4274AD;"
-		uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
-		<div class="container">
-			<a href="index.html" class="navbar-brand">
-				<img src="./img/logo.png" class="img-fluid p-0" style="height: 40px; ">
-				<!-- <div class="ml-2 p-0 d-inline webT">Glozzome</div> -->
-			</a>
-			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navBar">
-				<ul class="navbar-nav  ml-auto ">
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Programs
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="SchoolTerms.html">School Terms</a>
-							<a class="dropdown-item" href="PrivateSessions.html">Private Sessions</a>
-							<a class="dropdown-item" href="RegisterNow.html">Register Now</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							About Us
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="Location.html">Location</a>
-							<a class="dropdown-item" href="OurPhilosophy.html">Our Philosophy</a>
-							<a class="dropdown-item" href="Staff.html">Staff</a>
-						</div>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="News.html">News</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ContactUs.html">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="TOS.html">Terms and Conditions</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" style="text-shadow: 2px 2px 2px #08e0f8;" href="RegisterNow.html"><b>Register Now</b></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<!-- Nav Section Start -->
+	<div id="nav-placeholder"></div>
 	<!-- Nav Section End -->
 
-	
 	<!-- About Section Start -->
-	<section id="about"   class="text-center py-5 text-light">
+	<section id="about" class="text-center py-5 text-light">
 		<div class="inner-overlay">
 			<div class="container">
 				<div class="row">
 					<div class="col mt-5 pt-4">
-						<h1 class="text-light">About Us</h1 >
+						<h1 class="text-light">About Us</h1>
 						<p class="lead">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, saepe.
 						</p>
@@ -95,15 +43,16 @@
 				<div class="col-lg-6 col-md-6  align-self-center">
 					<h1>What We Do</h1>
 					<p class="lead">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ex quaerat magnam obcaecati repellendus voluptatum quisquam architecto iure, aliquam labore.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ex quaerat magnam obcaecati repellendus
+						voluptatum quisquam architecto iure, aliquam labore.
 					</p>
 					<p class="lead">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ex quaerat magnam obcaecati repellendus voluptatum quisquam architecto iure, aliquam labore.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ex quaerat magnam obcaecati repellendus
+						voluptatum quisquam architecto iure, aliquam labore.
 					</p>
 				</div>
 				<div class="col-lg-6 col-md-6 align-self-center text-center">
-					<img src="img/about/info.jpg" 
-					class="img-fluid w-50 h-70 rounded-circle">
+					<img src="img/about/info.jpg" class="img-fluid w-50 h-70 rounded-circle">
 				</div>
 			</div>
 		</div>
@@ -113,112 +62,87 @@
 	<!-- About Services Section Start -->
 	<section id="about-services" class="py-5 text-light
 	text-center bg-dark">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4 col-md-4">
-				<div class="card bg-success ">
-					<div class="card-body">
-						<i class="fas fa-envelope"></i>
-						<h2 class="text-light m-0">Lorem Ipsum</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4">
+					<div class="card bg-success ">
+						<div class="card-body">
+							<i class="fas fa-envelope"></i>
+							<h2 class="text-light m-0">Lorem Ipsum</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="card bg-danger ">
+						<div class="card-body">
+							<i class="fas fa-car"></i>
+							<h2 class="text-light m-0">Lorem Ipsum</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="card bg-primary ">
+						<div class="card-body">
+							<i class="fas fa-play"></i>
+							<h2 class="text-light m-0">Lorem Ipsum</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="card bg-danger ">
-					<div class="card-body">
-						<i class="fas fa-car"></i>
-						<h2 class="text-light m-0">Lorem Ipsum</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+			<div class="row mt-3">
+				<div class="col-lg-4 col-md-4">
+					<div class="card bg-info ">
+						<div class="card-body">
+							<i class="fas fa-cart-plus"></i>
+							<h2 class="text-light m-0">Lorem Ipsum</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="card bg-primary ">
-					<div class="card-body">
-						<i class="fas fa-play"></i>
-						<h2 class="text-light m-0">Lorem Ipsum</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+				<div class="col-lg-4 col-md-4">
+					<div class="card bg-primary ">
+						<div class="card-body">
+							<i class="fas fa-tree"></i>
+							<h2 class="text-light m-0">Lorem Ipsum</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4">
+					<div class="card bg-success ">
+						<div class="card-body">
+							<i class="fas fa-history"></i>
+							<h2 class="text-light m-0">Lorem Ipsum</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row mt-3">
-			<div class="col-lg-4 col-md-4">
-				<div class="card bg-info ">
-					<div class="card-body">
-						<i class="fas fa-cart-plus"></i>
-						<h2 class="text-light m-0">Lorem Ipsum</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="card bg-primary ">
-					<div class="card-body">
-						<i class="fas fa-tree"></i>
-						<h2 class="text-light m-0">Lorem Ipsum</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<div class="card bg-success ">
-					<div class="card-body">
-						<i class="fas fa-history"></i>
-						<h2 class="text-light m-0">Lorem Ipsum</h2>
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quasi magni placeat.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- About Services Section End-->
+	</section>
+	<!-- About Services Section End-->
 
-<!-- About Testimonial Section Start -->
-<section id="about-testimonial" class="py-5">
-	
-</section>
-<!-- About Testimonial Section End -->
+	<!-- About Testimonial Section Start -->
+	<section id="about-testimonial" class="py-5">
 
-<!-- Footer Section Start -->
-<footer id="footer" class="py-3 text-center text-light">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h2 class="display-5 mb-0 text-light">Glozzome</h2>
-				<div class="d-flex flex-row justify-content-center p-3">
-					<div class="px-5">
-						<a href="#">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-					</div>
-					<div class="px-5">
-						<a href="#">
-							<i class="fab fa-linkedin-in"></i>
-						</a>
-					</div>
-					<div class="px-5">
-						<a href="#">
-							<i class="fab fa-twitter"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				Glozzome.com © 2019 All Rights Reserved by MrhRifat
-			</div>
-		</div>
-	</div>
-</footer>
+	</section>
+	<!-- About Testimonial Section End -->
 
-<script type="text/javascript" src="js/jquery-slim.min.js"></script>
-<script type="text/javascript" src="js/popper.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/uikit.min.js"></script>
-<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+	<!-- Footer Section Start -->
+	<div id="foot-placeholder"></div>
+	<!-- Footer Section Start -->
+
+	<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+	<script>$(function () { $("#nav-placeholder").load("navbar.html"); });</script>
+	<script>$(function () { $("#foot-placeholder").load("footer.html"); });</script>
+
 </body>
+
 </html>

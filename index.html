@@ -15,59 +15,8 @@
 
 <body>
 
-	<!-- Navbar Section Start -->
-	<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4274AD;"
-		uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
-		<div class="container">
-			<a href="index.html" class="navbar-brand">
-				<img src="./img/logo-long.png" class="img-fluid p-0" style="height: 40px; ">
-				<!-- <div class="ml-2 p-0 d-inline webT">Glozzome</div> -->
-			</a>
-			<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navBar">
-				<ul class="navbar-nav  ml-auto ">
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Programs
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="SchoolTerms.html">School Terms</a>
-							<a class="dropdown-item" href="PrivateSessions.html">Private Sessions</a>
-							<a class="dropdown-item" href="RegisterNow.html">Register Now</a>
-						</div>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							About Us
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="Location.html">Location</a>
-							<a class="dropdown-item" href="OurPhilosophy.html">Our Philosophy</a>
-							<a class="dropdown-item" href="Staff.html">Staff</a>
-						</div>
-					</li>
-
-					<li class="nav-item">
-						<a class="nav-link" href="News.html">News</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ContactUs.html">Contact Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="TOS.html">Terms and Conditions</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" style="text-shadow: 2px 2px 2px #08e0f8;" href="RegisterNow.html"><b>Register Now</b></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+	<!-- Nav Section Start -->
+	<div id="nav-placeholder"></div>
 	<!-- Nav Section End -->
 
 	<!-- Slider Section Start -->
@@ -83,8 +32,8 @@
 				<div class="carousel-item crs-img-1 active">
 					<div class="container">
 						<div class="carousel-caption pb-5 mb-5 text-left">
-							<h2 class="display-4 text-light">School Terms</h2>
-							<p class="lead">
+							<h2 class="display-4 text-light" style="text-shadow: 1px 1px 1px #000000;">School Terms</h2>
+							<p class="lead" style="text-shadow: 1px 1px 1px #000000;">
 								Lorem ipsum ut do dolor excepteur adipisicing et minim consectetur <br>elit laborum quis
 								nostrud eiusmod.
 							</p>
@@ -95,8 +44,8 @@
 				<div class="carousel-item crs-img-2">
 					<div class="container">
 						<div class="carousel-caption mb-5 text-center">
-							<h2 class="display-4 text-light">Private Sessions</h2>
-							<p>
+							<h2 class="display-4 text-light" style="text-shadow: 1px 1px 1px #000000;">Private Sessions</h2>
+							<p style="text-shadow: 1px 1px 1px #000000;">
 								Lorem ipsum ut do dolor excepteur adipisicing et minim consectetur elit laborum quis
 								nostrud eiusmod.
 							</p>
@@ -107,8 +56,8 @@
 				<div class="carousel-item crs-img-3">
 					<div class="container">
 						<div class="carousel-caption pb-5 mb-5 text-right">
-							<h2 class="display-4 text-light">Register Now</h2>
-							<p>
+							<h2 class="display-4 text-light" style="text-shadow: 1px 1px 1px #000000;">Register Now</h2>
+							<p style="text-shadow: 1px 1px 1px #000000;">
 								Lorem ipsum ut do dolor excepteur adipisicing et minim <br>consectetur elit laborum quis
 								nostrud eiusmod.
 							</p>
@@ -299,43 +248,16 @@
 	<!-- Subcribe Section End -->
 
 	<!-- Footer Section Start -->
-	<footer id="footer" class="py-3 text-center text-light">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h2 class="display-5 mb-0 text-light">Glozzome</h2>
-					<div class="d-flex flex-row justify-content-center p-3">
-						<div class="px-5">
-							<a href="#">
-								<i class="fab fa-facebook-f"></i>
-							</a>
-						</div>
-						<div class="px-5">
-							<a href="#">
-								<i class="fab fa-linkedin-in"></i>
-							</a>
-						</div>
-						<div class="px-5">
-							<a href="#">
-								<i class="fab fa-twitter"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					Glozzome.com © 2019 All Rights Reserved by MrhRifat
-				</div>
-			</div>
-		</div>
-	</footer>
+	<div id="foot-placeholder"></div>
+	<!-- Footer Section Start -->
 
-	<script type="text/javascript" src="js/jquery-slim.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/uikit.min.js"></script>
 	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
-</body>
+	<script>$(function(){$("#nav-placeholder").load("navbar.html");});</script>
+	<script>$(function(){$("#foot-placeholder").load("footer.html");});</script>
 
+</body>
 </html>
