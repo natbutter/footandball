@@ -43,6 +43,13 @@ body{
 	width:100%;
 }
 
+.emboss {
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.emboss2 {
+	text-shadow: 1px 1px 1px #000000;
+}
 
 /*Showcase*/
 #showcase .fas{
