@@ -19,25 +19,25 @@ body{
 	height: 500px;
 }
 .crs-img-1{
-	background: url('../img/logos/logo_wide.png');
+	background: url('../img/logo_wide.png');
 	background-size: cover;
 	background-position: center;
 	width:100%;
 }
 .crs-img-2{
-	background: url('../img/slider-img2.jpg');
+	background: url('../img/stock2.jpg');
 	background-size: cover;
 	background-position: center;
 	width:100%;
 }
 .crs-img-3{
-	background: url('../img/kids1.jpg');
+	background: url('../img/stock1.jpg');
 	background-size: cover;
 	background-position: center;
 	width:100%;
 }
 .crs-img-4{
-	background: url('../img/slider-img3.jpg');
+	background: url('../img/stock3.jpg');
 	background-size: cover;
 	background-position: center;
 	width:100%;
@@ -59,7 +59,7 @@ body{
 
 /*Get Started*/
 #get-started{
-	background:url('../img/football3-min.jpg');
+	background:url('../img/bg1.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
@@ -133,7 +133,7 @@ body{
 
 /*About Section*/
 #about{
-	background:url('../img/football3-min.jpg');
+	background:url('../img/bg1.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -156,7 +156,7 @@ body{
 /*Services Section*/
 /*Services Header*/
 #services{
-	background:url('../img/football3-min.jpg');
+	background:url('../img/bg1.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
