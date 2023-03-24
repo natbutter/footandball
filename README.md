@@ -9,3 +9,8 @@ The *css* folder contains the folder with most of the default colors and styles.
 The *img* folder contains all the assets/pictures/etc.
 
 Pushing/making changes will automatically update the github pages site.
+
+Get an ssl certificate with:
+```
+sudo certbot certonly --manual --preferred-challenges dns -d footandball.com.au -d www.footandball.com.au
+```
