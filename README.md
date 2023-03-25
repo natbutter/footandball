@@ -10,7 +10,8 @@ The *img* folder contains all the assets/pictures/etc.
 
 Pushing/making changes will automatically update the github pages site.
 
-Get an ssl certificate with:
+On a linux machine with certbot, get an ssl certificate with:
 ```
-sudo certbot certonly --manual --preferred-challenges dns -d footandball.com.au -d www.footandball.com.au
+sudo certbot certonly --manual --preferred-challenges dns -d autodiscover.footandball.com.au -d cpanel.footandball.com.au -d cpcalendars.footandball.com.au -d cpcontacts.footandball.com.au -d  footandball.com.au -d mail.footandball.com.au -d webdisk.footandball.com.au -d webmail.footandball.com.au -d www.footandball.com.au
 ```
+Put in each of the acme challenges in the CPanel Zone Editor. Then Add the certificates to WHM.
