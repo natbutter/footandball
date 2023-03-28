@@ -19,8 +19,9 @@ body{
 	height: 500px;
 }
 .crs-img-1{
-	background: url('../img/logo_wide.png');
-	background-size: cover;
+	/* background: url('../img/logo_wide.png'); */
+	background: url('../img/logo_black.svg'); 
+	background-size: 50%;
 	background-position: center;
 	width:100%;
 }
