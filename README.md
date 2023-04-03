@@ -8,7 +8,11 @@ The *css* folder contains the folder with most of the default colors and styles.
 
 The *img* folder contains all the assets/pictures/etc.
 
+## Auto deploy
 Pushing/making changes will automatically update the github pages site.
+There is a github action that pushes to the ftp webserver to automatically update footandball.com.au also.
+
+## SSL Cert
 
 On a linux machine with certbot, get an ssl certificate with:
 ```
