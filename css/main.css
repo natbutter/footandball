@@ -20,9 +20,11 @@ body{
 }
 .crs-img-1{
 	/* background: url('../img/logo_wide.png'); */
-/* 	background: url('../img/logo_black.svg');  */
-	background: url('../img/Website_July_2023_Flyer_cropped.png');
-	background-size: 50%;
+/* 	background: url('../img/logo_black.svg');*/
+	background: url('../img/July_hols_facebook_1-min.png');
+	background-size: 100%;
+	opacity: 0.8;
+/*	background-size: cover;*/
 	background-position: center;
 	width:100%;
 }
