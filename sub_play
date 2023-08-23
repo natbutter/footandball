@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<title>Foot and Ball Academy</title>
+</head>
+
+<body>
+
+	<!-- Nav Section Start -->
+	<div id="nav-placeholder"></div>
+	<!-- Nav Section End -->
+
+
+	<!-- About Section Start -->
+	<section id="about" class="text-center py-5 text-light">
+		<div class="inner-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col mt-5 pt-4">
+						<h1 class="text-light">Subscription Players</h1>
+						<p class="lead">
+						Foot and Ball Academy is incorporating a <b>new subscription-based business model</b> into its current operation. The first of its kind. 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About Section End -->
+
+	<!-- Info Section Start -->
+	<section id="about-info" class="py-5 my-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12  align-self-center">
+					<p class="lead">
+						This subscription model will allow a subscribing player access to anywhere between <b>one and five weekly training sessions.</b></p>
+					<p class="lead">
+						This operational approach is based on creating a more football-intensive environment <b>for dedicated players</b>, 
+						whilst also incorporating our customary players, who usually attend once per week. </p>
+					<p class="lead">
+						An increase in contact hours between the Academy and player ensures more aspects of the player’s technical, tactical, and mental elements are 
+						covered through coaching on a more regular basis.</p>
+					<p class="lead">
+						To satisfy this we have devised a new (draft) <b>rotational Term 4 weekly timetable</b>, which incorporates more elements of the basic game: </p>
+
+					<h3> Coach to Player Ratio</h3>
+					<p class="lead">
+						One of the more frequent asked FAQ’s concerns the quality of coaching during any given session on any given day.</p>
+					<p class="lead">
+						At Foot and Ball Academy we pride ourselves on striving to offer a well-researched, superior training session.</p>
+					<p class="lead">
+						<b>We sincerely strive for (but cannot guarantee) a maximum player to trainer ratio of 1:7.</b> 
+						That is, for every 7 players attending a session on any given night there will be at least one corresponding trainer.</p>
+					<p class="lead">
+						We calculate a relative balance between session pricing for the client and quality of coaching is more than adequate.</p>
+			
+					<h3>Term 4, 2023</h3>
+					<p class="lead">
+						Term 4 represents a trial period where this subscription idea will be rolled out and <b>offered to the Development Squad only</b>.</p>
+					<h3>Joining Fees and Uniform Fees</h3>
+					<p class="lead">
+						<b>None!</b> At Foot and Ball Academy we believe our <b>no joining fee and no uniform fee</b> is a financial advantage in
+						this market space. We pride ourselves on having no additional fees beyond payment of the players direct
+						footballing education.
+						We strive to provide affordable access to our services as reasonably possible. Player improvement is truly
+						at the foundation of Foot and Ball Academy.
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 col-md-12  align-self-center">
+					<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZ__pX1ZMJUM1VEWjRDMDdBN1QzMTlLWjIxV0kySUJVTS4u" class="btn btn-warning" role="button">Click Here to Register</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- About Info Section End -->
+
+	<!-- Footer Section Start -->
+	<div id="foot-placeholder"></div>
+	<!-- Footer Section Start -->
+
+	<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/uikit.min.js"></script>
+	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
+	<script>$(function () { $("#nav-placeholder").load("navbar.html"); });</script>
+	<script>$(function () { $("#foot-placeholder").load("footer.html"); });</script>
+
+</body>
+
+</html>
