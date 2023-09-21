@@ -13,7 +13,7 @@ A GitHub pages site is automatically deployed and our custom domain with HTTPS i
 
 Previously, we were on CPanel hosting too. 
 
-~~
+<pre><del>
 ## Auto deploy
 Pushing/making changes will automatically update the github pages site.
 There is a github action that pushes to the ftp webserver to automatically update footandball.com.au also.
@@ -24,6 +24,6 @@ On a linux machine with certbot, get an ssl certificate with:
 ```
 sudo certbot certonly --manual --preferred-challenges dns -d autodiscover.footandball.com.au -d cpanel.footandball.com.au -d cpcalendars.footandball.com.au -d cpcontacts.footandball.com.au -d  footandball.com.au -d mail.footandball.com.au -d webdisk.footandball.com.au -d webmail.footandball.com.au -d www.footandball.com.au
 ```
-Put in each of the acme challenges in the CPanel Zone Editor. Then Add the certificates to WHM.
-~~
+Put in each of the acme challenges in the CPanel Zone Editor. Then Add the certificates to WHM. 
+</del></pre>
 
