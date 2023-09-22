@@ -11,7 +11,7 @@ The *img* folder contains all the assets/pictures/etc.
 ## Deployment
 A GitHub pages site is automatically deployed and our custom domain with HTTPS is configured following [these instructions](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
-Previously, we were on CPanel hosting too. 
+Previously, we were on CPanel hosting too.  
 
 <pre><del>
 ## Auto deploy
