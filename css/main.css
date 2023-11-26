@@ -236,6 +236,10 @@ body{
 	#services-table .text-center.display-4 {
 		font-size: 30px;
 	}
+
+		#slider {
+			display: none;
+		}
 }
 
 @media(max-width: 575px){
