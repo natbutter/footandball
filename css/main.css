@@ -18,9 +18,9 @@ body{
 .carousel-item{
 	height: 500px;
 }
-.container {
+.carousel-inner {
     max-width: 800px; /* Adjust this value as needed */
-    margin: 0 auto;   /* Center the container */
+    margin: 0 auto;   /* Center the carousel */
 }
 .crs-img-1{
 	background: url('../img/term_enrollment_website_carousel.png');
