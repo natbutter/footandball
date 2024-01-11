@@ -15,6 +15,9 @@ body{
 }
 
 /*Slider*/
+.slider {
+    overflow: hidden; /* Hide overflowing content */
+}
 .carousel-item{
 	height: 500px;
 }
