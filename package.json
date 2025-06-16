@@ -1,0 +1,15 @@
+{
+  "name": "footandballacademy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "concat -o dist/css/style.css css/bootstrap.min.css css/uikit.min.css css/fontawesome/css/all.css css/custom/main.css && cleancss -o dist/css/style.min.css dist/css/style.css",
+    "build:js": "concat -o dist/js/bundle.js js/jquery-3.6.4.min.js js/popper.min.js js/bootstrap.min.js js/uikit.min.js js/uikit-icons.min.js js/custom/app.js && uglifyjs dist/js/bundle.js -o dist/js/bundle.min.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
