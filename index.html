@@ -3,123 +3,180 @@
 
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/uikit.min.css">
-	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<link rel="stylesheet" href="css/fontawesome/css/all.css" />
 	<title>Foot and Ball Academy</title>
+
+	<style>
+		/* Add subtle background to sections */
+		#showcase {
+			padding: 60px 0;
+		}
+
+		.section-card {
+			background: #f8f9fa;
+			padding: 30px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin-bottom: 40px;
+			height: 100%;
+		}
+
+		.section-card h3 {
+			margin-bottom: 20px;
+			font-weight: 600;
+		}
+
+		.fb-container {
+			padding: 15px;
+			background: white;
+			border-radius: 8px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.fb-container h3 {
+			margin-bottom: 20px;
+			font-weight: 600;
+		}
+
+		.fb-page {
+			flex-grow: 1;
+			min-height: 400px;
+			overflow: hidden;
+			border-radius: 8px;
+		}
+
+		/* Buttons */
+		.btn-register {
+			margin-top: 20px;
+			font-weight: 600;
+			padding: 12px 30px;
+		}
+
+		/* Map Section */
+		#map-section {
+			padding: 60px 0;
+			background: #e9ecef;
+			text-align: center;
+		}
+
+		#map-section h3 {
+			margin-bottom: 25px;
+			font-weight: 600;
+		}
+
+		iframe {
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			max-width: 100%;
+			height: 350px;
+		}
+
+		/* Get Started Section */
+		#get-started {
+			background: #4274ad;
+			color: white;
+			padding: 60px 20px;
+			text-align: center;
+			font-weight: 500;
+			font-size: 1.25rem;
+			border-radius: 0 0 10px 10px;
+		}
+
+		/* Responsive tweaks */
+		@media (max-width: 991px) {
+			.fb-container .fb-page {
+				min-height: 300px;
+			}
+		}
+	</style>
 </head>
 
 <body>
 	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="ndWwdczS"></script>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="ndWwdczS"></script>
 
 	<!-- Nav Section Start -->
 	<div id="nav-placeholder"></div>
 	<!-- Nav Section End -->
 
-	<!-- Slider Section Start -->
-	
-	<!-- Slider Section End -->
-
 	<!-- Showcase Section Start -->
-	<section id="showcase">
-		<div class="container">
-			<div class="row py-5 text-center">
-
-				<div class="col-xl-3">
-					<img src="img/soccer-ball-icon.png" alt="Your Icon" style="margin-top: 20px; width: 40px; height: 40px;">
-					<br>
+	<section id="showcase" class="container">
+		<div class="row g-4">
+			<!-- Our Mission -->
+			<div class="col-lg-3 col-md-6">
+				<div class="section-card d-flex flex-column">
 					<h3>Our Mission</h3>
-					<p class="lead mt-2"> We are an educational establishment focused on long-term individual player development. 
-						Think of us like a “primary school” for football, i.e. six y/o to 12 y/o. </p>
-					<p class="lead mt-2"> Due to time and staffing restrictions we currently only offer elite level sessions. Targetting those players that are ambitious and 'hungry' to improve.
-					</p>
-					<p class="lead mt-2"> We feel players that join earlier instead of later i.e. from U7's, tend to benefit the most from these standards as they can adjust much easier.
-					</p>
-					<a href="register.html" class="btn btn-info">Register Now</a>
-					<br>
-
-				</div>
-
-				<div class="col-xl-6">
-				<img src="img/soccer-ball-icon.png" alt="Your Icon" style="margin-top: 20px; width: 40px; height: 40px;">
-					<br>
-					<div class="fb-page" data-href="https://www.facebook.com/footandball.academy" data-show-posts="true" data-width="" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" 	
-					data-width=500px width="500px" >
-						<blockquote cite="https://www.facebook.com/footandball.academy" class="fb-xfbml-parse-ignore">
-							<a href="https://www.facebook.com/footandball.academy">
-								Our Offical Facebook Feed 
-							</a></blockquote>
-					</div>
-					<br>
-				</div>
-				
-				<div class="col-xl-3">
-				<img src="img/soccer-ball-icon.png" alt="Your Icon" style="margin-top: 20px; width: 40px; height: 40px;">
-					<br>
-					<h3>Meet our Founder</h3>
-					<p class="lead mt-2">Nick has dedicated Foot and Ball Academy to incorporating the latest trends in footballing education from around the world.</p>
-					<p class="lead mt-2">He endeavours to always find suitable citations, globally, for all the philosophies, curriculums, and session designs he puts on for the players.</p>
-					<a target="_blank" href="Staff.html">
-						<img src="./img/nick.jpg" alt="Forest" style="width:150px">
-					</a>
-
-					<br>
-
+					<p>We are an educational establishment focused on long-term individual player development.</p>
+					<p>Think of us like a “primary school” for football, i.e., six y/o to 12 y/o.</p>
+					<p>Due to time and staffing restrictions, we currently only offer elite level sessions targeting ambitious
+						players hungry to improve.</p>
+					<a href="register.html" class="btn btn-info btn-register">Register Now</a>
 				</div>
 			</div>
-			<div class="row py-5 text-center">
-				<div class="col-lg-12 col-md-12">
-					<h3>Find Us</h3>
 
-					<p class="lead">
-						McQuade Park<br>
-						(entry off Tebbutt Street) Windsor, NSW, 2756
-					</p>
+			<!-- Facebook Feed -->
+			<div class="col-lg-6 col-md-12">
+				<div class="fb-container">
+					<h3>Latest from our Facebook</h3>
+					<div class="fb-page" data-href="https://www.facebook.com/footandball.academy" data-tabs="timeline"
+						data-width="" data-height="" data-small-header="true" data-adapt-container-width="true"
+						data-hide-cover="true" data-show-facepile="false">
+						<blockquote cite="https://www.facebook.com/footandball.academy" class="fb-xfbml-parse-ignore">
+							<a href="https://www.facebook.com/footandball.academy">Foot and Ball Academy Facebook</a>
+						</blockquote>
+					</div>
+				</div>
+			</div>
 
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.8489523349785!2d150.81155187479513!3d-33.60922340565935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0d632d517065a9%3A0x50b3af72ab29c0f0!2sHawkesbury%20Valley%20Rugby%20Union%20Club!5e0!3m2!1sen!2sau!4v1746923599529!5m2!1sen!2sau"
-						width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<!-- Meet Our Founder -->
+			<div class="col-lg-3 col-md-6">
+				<div class="section-card text-center d-flex flex-column align-items-center">
+					<h3>Meet Our Founder</h3>
+					<p>Nick has dedicated Foot and Ball Academy to incorporating the latest trends in football education
+						from around the world.</p>
+					<p>He always ensures our philosophies, curriculums, and session designs have global citations.</p>
+					<a target="_blank" href="Staff.html">
+						<img src="./img/nick.jpg" alt="Nick - Founder" class="img-fluid rounded-circle" style="max-width: 150px;"/>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- Showcase Section End -->
 
+	<!-- Map Section -->
+	<section id="map-section" class="container">
+		<h3>Find Us</h3>
+		<p>McQuade Park<br />Entry off Tebbutt Street, Windsor, NSW 2756</p>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.8489523349785!2d150.81155187479513!3d-33.60922340565935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0d632d517065a9%3A0x50b3af72ab29c0f0!2sHawkesbury%20Valley%20Rugby%20Union%20Club!5e0!3m2!1sen!2sau!4v1746923599529!5m2!1sen!2sau"
+			allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
 	<!-- Get Started Section Start -->
-	<section id="get-started" class="text-center py-5 text-light">
-		<div class="inner-overlay">
-			<div class="container">
-				<div class="row">
-					<div class="col mt-5 pt-4 gC">
-						<h3 class="text-light">Football is the World Game.</h3>
-						<p class="lead">
-							Foot and Ball Academy is proud to be a part of that.
-						</p>
-					</div>
-				</div>
-			</div>
+	<section id="get-started">
+		<div class="container">
+			<h3>Football is the World Game.</h3>
+			<p>Foot and Ball Academy is proud to be a part of that.</p>
 		</div>
 	</section>
 	<!-- Get Started Section End -->
 
 	<!-- Footer Section Start -->
 	<div id="foot-placeholder"></div>
-	<!-- Footer Section Start -->
+	<!-- Footer Section End -->
 
-	<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/uikit.min.js"></script>
-	<script type="text/javascript" src="js/uikit-icons.min.js"></script>
-	<script>$(function () { $("#nav-placeholder").load("navbar.html"); });</script>
-	<script>$(function () { $("#foot-placeholder").load("footer.html"); });</script>
-
-</body>
-
-</html>
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/ui
