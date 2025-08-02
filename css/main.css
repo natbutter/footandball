@@ -296,5 +296,11 @@ body {
 		margin-left: 50px;
 	}	
 }
+/* Force removal of any inherited background image */
+html, body {
+  background: none !important;
+  background-image: none !important;
+  background-color: #ffffff !important;
+}
 
 
