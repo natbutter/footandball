@@ -1,60 +1,66 @@
 <!-- Navbar Section Start -->
-<!-- <div class="container-fluid d-flex align-items-center justify-content-center" style="height: 50px;"> -->
-<nav class="navbar navbar-expand-lg navbar-light py-0" style="background-color: #4274AD;"
+<nav class="navbar navbar-expand-lg navbar-light py-0" style="background-color: #4274AD; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
   uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
-  <div class="container" >
-    <a href="index.html" class="navbar-brand">
-      <img src="./img/AssetsMan.png" class="img-fluid p-0" style="height: 40px; ">
-      <img src="./img/AssetsTitle.png" class="img-fluid p-0" style="height: 40px; ">
-      <!-- <object data="./img/logos/AssetsMan.svg" type="image/svg+xml"></object> -->
-      <!-- <div class="ml-2 p-0 d-inline webT">Glozzome</div> -->
+  <div class="container">
+    <a href="index.html" class="navbar-brand" style="font-family: 'Open Sans', sans-serif;">
+      <img src="./img/AssetsMan.png" class="img-fluid p-0" style="height: 40px;">
+      <img src="./img/AssetsTitle.png" class="img-fluid p-0" style="height: 40px;">
     </a>
-    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar">
+    <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navBar">
-      <ul class="navbar-nav justify-content-center">
+      <ul class="navbar-nav justify-content-center" style="font-family: 'Open Sans', sans-serif;">
 
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Programs
+        <!-- New direct links with some spacing and inline hover color -->
+        <li class="nav-item" style="margin: 0 15px;">
+          <a class="nav-link" href="Help_Im_New.html" 
+             style="color: white;" 
+             onmouseover="this.style.color='#FFD700';" 
+             onmouseout="this.style.color='white';">
+             Help! I'm New.
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="subscribers.html">Full time</a>
-            <a class="dropdown-item" href="SchoolTerms.html">Casual</a>
-            <a class="dropdown-item" href="PrivateSessions.html">Private Sessions</a>
-            <!-- <a class="dropdown-item" href="Highlights.html">Training Videos</a> -->
-          </div>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item" style="margin: 0 15px;">
+          <a class="nav-link" href="CoachingPhilosophy.html" 
+             style="color: white;" 
+             onmouseover="this.style.color='#FFD700';" 
+             onmouseout="this.style.color='white';">
+             Coaching Philosophy
+          </a>
+        </li>
+        <li class="nav-item" style="margin: 0 15px;">
+          <a class="nav-link" href="AcademyPhenomena.html" 
+             style="color: white;" 
+             onmouseover="this.style.color='#FFD700';" 
+             onmouseout="this.style.color='white';">
+             Academy Phenomena
+          </a>
+        </li>
+
+        <!-- Single dropdown -->
+        <li class="nav-item dropdown" style="margin: 0 15px;">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+            aria-haspopup="true" aria-expanded="false" style="color: white;">
             About Us
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="ContactUs.html">Contact Us</a>
-            <a class="dropdown-item" href="OurPhilosophy.html">Coaching Philosophy</a>
             <a class="dropdown-item" href="Staff.html">Staff</a>
             <a class="dropdown-item" href="Privacy.html">Privacy</a>
             <a class="dropdown-item" href="TOS.html">Terms and Conditions</a>
           </div>
         </li>
 
-        <!--<li class="nav-item">
-          <a class="nav-link" href="timetables.html">Timetables</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="ContactUs.html">Contact Us</a>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="TOS.html">Terms and Conditions</a>
-        </li> -->
-        <li class="nav-item">
-          <a class="btn btn-warning" href="register.html"><b>Register Now</b></a>
+        <!-- Register button -->
+        <li class="nav-item" style="margin: 0 15px;">
+          <a class="btn btn-warning" href="register.html" style="padding: 8px 20px; font-weight: bold;">
+            <b>Register Now</b>
+          </a>
         </li>
+
       </ul>
     </div>
   </div>
 </nav>
-<!-- </div> -->
+<!-- Navbar Section End -->
