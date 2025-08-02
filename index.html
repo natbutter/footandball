@@ -44,12 +44,17 @@
     }
 
     iframe {
-      width: 100% !important;
-      height: 100% !important;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+  width: 100% !important;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Target only the map iframe inside #map-section */
+  #map-section iframe {
+  height: 700px !important;
+  }
+
 
     #map-section {
       margin-top: 30px;
