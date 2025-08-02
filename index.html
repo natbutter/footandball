@@ -35,12 +35,16 @@
     .fb-container,
     #map-section {
       margin-top: 30px;
+      height: 450px; /* Set a fixed height for the facebook container to fill */
+      display: flex;
+      flex-direction: column;
     }
 
+    /* Facebook Page container */
     .fb-page {
       flex-grow: 1;
-      min-height: 400px;
       width: 100% !important;
+      height: 100% !important;
     }
 
     iframe {
@@ -49,19 +53,26 @@
       max-width: 100%;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: none;
     }
 
     #map-section iframe {
-      height: 350px;
-      width: 100%;
-      max-width: 800px;
+      height: 100% !important;
+      width: 100% !important;
+      max-width: none;
       margin: 0 auto;
       display: block;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .section-card.text-center {
-      align-items: center;
+    /* Center the Our Mission column content vertically and horizontally */
+    .mission-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
       text-align: center;
     }
   </style>
@@ -73,10 +84,10 @@
   <!-- Navbar Section End -->
 
   <main class="main-section container">
-    <div class="row">
+    <div class="row" style="height: 100%;">
       <!-- Our Mission -->
-      <div class="col-lg-3 col-md-6">
-        <div class="section-card text-center d-flex flex-column justify-content-center">
+      <div class="col-lg-3 col-md-6 d-flex">
+        <div class="section-card mission-card">
           <h3>Our Mission</h3>
           <p>We are an educational establishment focused on long-term individual player development.</p>
           <p>Think of us like a “primary school” for football, i.e., six y/o to 12 y/o.</p>
@@ -106,7 +117,7 @@
       </div>
 
       <!-- Upcoming Info -->
-      <div class="col-lg-3 col-md-6">
+      <div class="col-lg-3 col-md-6 d-flex">
         <div class="section-card">
           <h3>Upcoming Info</h3>
           <ul>
