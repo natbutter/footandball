@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Foot and Ball Academy</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/uikit.min.css" />
@@ -32,48 +32,45 @@
       margin-top: 15px;
     }
 
-    .fb-container,
-    #map-section {
-      margin-top: 30px;
-      height: 450px; /* Set a fixed height for the facebook container to fill */
-      display: flex;
-      flex-direction: column;
-    }
-
-    /* Facebook Page container */
-    .fb-page {
-      flex-grow: 1;
-      width: 100% !important;
-      height: 100% !important;
-    }
-
-    iframe {
-      width: 100% !important;
-      height: 100% !important;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border: none;
-    }
-
-    #map-section iframe {
-      height: 100% !important;
-      width: 100% !important;
-      max-width: none;
-      margin: 0 auto;
-      display: block;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Center the Our Mission column content vertically and horizontally */
+    /* CENTER COLUMN 1 CONTENT */
     .mission-card {
-      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
+      height: 100%;
+    }
+
+    /* FACEBOOK FEED CONTAINER */
+    .fb-container {
+      margin-top: 30px;
+      height: 450px; /* fixed height so Facebook feed can fill */
+    }
+
+    /* Make Facebook feed iframe fill container */
+    .fb-page,
+    .fb-page > span,
+    .fb-page > span > iframe {
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 400px;
+    }
+
+    /* MAP SECTION */
+    #map-section {
+      margin-top: 30px;
+    }
+
+    #map-section iframe {
+      width: 100% !important;
+      height: 400px !important;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: none;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
     }
   </style>
 </head>
@@ -84,7 +81,7 @@
   <!-- Navbar Section End -->
 
   <main class="main-section container">
-    <div class="row" style="height: 100%;">
+    <div class="row">
       <!-- Our Mission -->
       <div class="col-lg-3 col-md-6 d-flex">
         <div class="section-card mission-card">
@@ -103,8 +100,8 @@
           <div class="fb-page"
             data-href="https://www.facebook.com/footandball.academy"
             data-tabs="timeline"
-            data-width="100%"
-            data-height="400"
+            data-width="500"
+            data-height="450"
             data-small-header="true"
             data-adapt-container-width="true"
             data-hide-cover="true"
@@ -117,7 +114,7 @@
       </div>
 
       <!-- Upcoming Info -->
-      <div class="col-lg-3 col-md-6 d-flex">
+      <div class="col-lg-3 col-md-6">
         <div class="section-card">
           <h3>Upcoming Info</h3>
           <ul>
