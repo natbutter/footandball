@@ -238,7 +238,6 @@
 		</div>
 	</section>
 	<!-- Get Started Section End -->
-
 	<!-- Footer Section Start -->
 	<div id="foot-placeholder"></div>
 	<!-- Footer Section End -->
@@ -246,4 +245,16 @@
 	<script src="js/jquery-3.6.4.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/ui
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+
+	<!-- Load navbar and footer -->
+	<script>
+		$(document).ready(function () {
+			$("#nav-placeholder").load("navbar.html");
+			$("#foot-placeholder").load("footer.html");
+		});
+	</script>
+
+</body>
+</html>
