@@ -35,11 +35,15 @@
     .fb-container,
     #map-section {
       margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .fb-page {
       flex-grow: 1;
       min-height: 400px;
+      max-height: 600px;
       width: 100% !important;
     }
 
@@ -76,19 +80,6 @@
       text-align: center;
     }
 
-    /* NEW CSS to stretch Facebook feed to match column heights */
-    .fb-container,
-    .fb-container>.fb-page {
-      flex: 1 1 auto;
-      min-height: 100%;
-      width: 100% !important;
-    }
-
-    .fb-page iframe {
-      height: 100% !important;
-      width: 100% !important;
-      min-height: 100%;
-    }
   </style>
 </head>
 
@@ -111,19 +102,21 @@
           <h3>Our Mission</h3>
           <p>We are an educational establishment focused on long-term individual player development.</p>
           <p>Think of us like a “primary school” for football, i.e., six y/o to 12 y/o.</p>
-          <p>Due to time and staffing restrictions, we currently only offer elite level sessions targeting ambitious players hungry to improve.</p>
+          <p>Due to time and staffing restrictions, we currently only offer elite level sessions targeting ambitious
+            players hungry to improve.</p>
           <a href="register.html" class="btn btn-info btn-register">Register Now</a>
         </div>
       </div>
 
       <!-- Facebook Feed -->
       <div class="col-lg-6 col-md-12 d-flex">
-        <div class="fb-container text-center flex-fill">
+        <div class="fb-container text-center flex-fill d-flex flex-column">
           <h3>Latest from our Facebook</h3>
-          <div class="fb-page"
+          <div class="fb-page flex-grow-1"
             data-href="https://www.facebook.com/footandball.academy"
             data-tabs="timeline"
             data-width="100%"
+            data-height="500"
             data-small-header="true"
             data-adapt-container-width="true"
             data-hide-cover="true"
@@ -165,10 +158,10 @@
   </section>
 
   <!-- Get Started Section Start -->
-  <section id="get-started" style="background-color: #4274AD; color: white; padding: 3rem 0; text-align: center; background-image: none !important;">
+  <section id="get-started" style="background-color: #4274AD; color: white; padding: 3rem 0; text-align: center;">
     <div class="container">
-      <h3 style="font-size: 3rem; font-weight: bold; margin-bottom: 1rem;">Football is the World Game.</h3>
-      <p style="font-size: 1.8rem;">Foot and Ball Academy is proud to be a part of that.</p>
+      <h3>Football is the World Game.</h3>
+      <p>Foot and Ball Academy is proud to be a part of that.</p>
     </div>
   </section>
   <!-- Get Started Section End -->
