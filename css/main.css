@@ -66,24 +66,13 @@ body {
 
 /*Get Started*/
 #get-started{
-	background:url('../img/bg1.jpg');
+	/* background:url('../img/bg1.jpg'); */
 	background-attachment: fixed;
-	background-size: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 300px;
 	position: relative;
 	background-position: center;
-	/* bottom: 0px; */
-	/* right: 50px; */
-}
-#get-started .inner-overlay{
-	background:rgba(0,0,0,0.7);
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	width: 100%
 }
 
 /*Info */
@@ -144,7 +133,7 @@ body {
 
 /*About Section*/
 #about{
-	background:url('../img/bg1.jpg');
+	/* background:url('../img/bg1.jpg'); */
 	background-attachment: fixed;
 	background-size: 100%;
 	/* background-size: cover; */
@@ -161,14 +150,11 @@ body {
 	width: 100%;
 	min-height: 300px;
 }
-#about-services .fas{
-	font-size:50px;
-}
 
 /*Services Section*/
 /*Services Header*/
 #services{
-	background:url('../img/bg1.jpg');
+	/* background:url('../img/bg1.jpg'); */
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
