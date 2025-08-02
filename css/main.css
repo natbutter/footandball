@@ -1,8 +1,9 @@
 html{
 	scroll-behavior: smooth;
 }
-body{
-
+body {
+  background: none !important;
+  background-color: #ffffff !important;
 }
 .navbar {
 	background:#4274AD;
