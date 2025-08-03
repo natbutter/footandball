@@ -19,107 +19,129 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       background-color: #f4f4f4;
+      padding-top: 70px; /* push content below navbar */
     }
 
     /* Main container padding */
     .main-section {
-      padding: 50px 15px;
+      padding: 50px 15px 30px;
     }
 
-    /* Card style for content boxes */
+    /* Flex equal height row for top 3 columns */
+    .equal-height-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 60px; /* larger gap below */
+    }
+
+    /* Make columns flex children with column layout */
+    .equal-height-row > div {
+      background: transparent;
+      display: flex;
+      flex-direction: column;
+      /* allow flexible height, but controlled below */
+    }
+
+    /* Section card style */
     .section-card {
       background-color: #ffffff;
       padding: 20px;
-      margin-bottom: 30px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
-    /* Register button margin */
+    /* Left and Right columns fixed width approx 25% */
+    .col-25 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    /* Middle column approx 50% */
+    .col-50 {
+      flex: 1 1 50%;
+      max-width: 50%;
+    }
+
+    /* Map section: fill height of middle column */
+    #map-container {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Make map iframe fill container nicely */
+    #map-container iframe {
+      width: 100% !important;
+      height: 550px !important; /* slightly taller */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Bottom feeds section flex */
+    #feeds-section {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 60px;
+    }
+
+    #feeds-section > div {
+      flex: 1;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 480px; /* give feeds some good height */
+    }
+
+    #feeds-section h3 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* Facebook and YouTube iframe styles */
+    .fb-page,
+    .youtube-embed iframe {
+      flex-grow: 1;
+      width: 100% !important;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Our Mission button margin */
     .btn-register {
       margin-top: 15px;
     }
 
-    /* Facebook container and map section layout */
-    .fb-container,
-    #map-section {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    /* Facebook page plugin sizing */
-    .fb-page {
-      flex-grow: 1;
-      min-height: 400px;
-      max-height: 600px;
-      width: 100% !important;
-    }
-
-    /* Iframe base styling */
-    iframe {
-      width: 100% !important;
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Specifically set Google map iframe height */
-    #map-section iframe {
-      height: 550px !important;
-    }
-
-    /* Margins for map section */
-    #map-section {
-      margin-top: 30px;
-      margin-bottom: 50px;
-    }
-
-    /* Center text inside map section headings and paragraphs */
-    #map-section h3,
-    #map-section p {
+    /* Footer smaller height */
+    footer {
+      background-color: #4274AD;
+      color: white;
       text-align: center;
+      padding: 1.5rem 0; /* reduced from approx 3rem */
+      font-weight: 600;
+      font-size: 1.25rem;
     }
 
-    /* Additional styling for map iframe */
-    #map-section iframe {
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Center text and flex alignment for section cards */
-    .section-card.text-center {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    /* Adjust top row section-card padding gently */
-    .main-section > .row > .col-lg-3 > .section-card,
-    .main-section > .row > .col-lg-6 > .section-card {
-      padding: 15px 20px; /* reduced vertical padding from 20px to 15px */
-      height: 100%;
-    }
   </style>
 </head>
 
 <body>
-  <!-- Facebook SDK root for Facebook feed plugin -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
-    nonce="FBSDK"></script>
-
   <!-- Navbar placeholder - loaded dynamically via jQuery -->
   <div id="nav-placeholder"></div>
 
-  <!-- Main content section container -->
+  <!-- Main container for page content -->
   <main class="main-section container">
-    <div class="row d-flex align-items-stretch">
-      <!-- Left Column: Our Mission Card -->
-      <div class="col-lg-3 col-md-6 d-flex">
+    <!-- Top 3 columns row: Our Mission | Map | Meet Our Founder -->
+    <div class="equal-height-row">
+      <div class="col-25">
         <div class="section-card text-center d-flex flex-column justify-content-center">
           <h3>Our Mission</h3>
           <p>We are an educational establishment focused on long-term individual player development.</p>
@@ -130,20 +152,15 @@
         </div>
       </div>
 
-      <!-- Middle Column: Map Feed -->
-      <div class="col-lg-6 col-md-6 d-flex">
-        <div class="section-card text-center d-flex flex-column justify-content-center">
-          <h3>Find Us</h3>
-          <p>McQuade Park<br />Entry off Tebbutt Street, Windsor, NSW 2756</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.0376535072251!2d150.81278093372703!3d-33.60963318454133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0d6289c228e761%3A0xf017d68f9f15730!2sMcQuade%20Park!5e1!3m2!1sen!2sau!4v1754127213533!5m2!1sen!2sau"
-            width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      <div class="col-50" id="map-container">
+        <h3 class="text-center mb-3">Find Us</h3>
+        <p class="text-center mb-4">McQuade Park<br />Entry off Tebbutt Street, Windsor, NSW 2756</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.0376535072251!2d150.81278093372703!3d-33.60963318454133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0d6289c228e761%3A0xf017d68f9f15730!2sMcQuade%20Park!5e1!3m2!1sen!2sau!4v1754127213533!5m2!1sen!2sau"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <!-- Right Column: Meet Our Founder Card -->
-      <div class="col-lg-3 col-md-6 d-flex">
+      <div class="col-25">
         <div class="section-card text-center d-flex flex-column align-items-center justify-content-center">
           <h3>Meet Our Founder</h3>
           <p>Nick has dedicated Foot and Ball Academy to incorporating the latest trends in football education
@@ -157,41 +174,43 @@
       </div>
     </div>
 
-    <!-- Facebook and YouTube Feeds Row -->
-    <div class="row mt-4">
-      <div class="col-lg-6 col-md-12 d-flex">
-        <div class="fb-container text-center flex-fill d-flex flex-column section-card">
-          <h3>Latest from our Facebook</h3>
-          <div class="fb-page flex-grow-1"
-            data-href="https://www.facebook.com/footandball.academy"
-            data-tabs="timeline"
-            data-width="100%"
-            data-height="500"
-            data-small-header="true"
-            data-adapt-container-width="true"
-            data-hide-cover="true"
-            data-show-facepile="false">
-            <blockquote cite="https://www.facebook.com/footandball.academy" class="fb-xfbml-parse-ignore">
-              <a href="https://www.facebook.com/footandball.academy">Foot and Ball Academy Facebook</a>
-            </blockquote>
-          </div>
+    <!-- Bottom 2 feeds row: Facebook | YouTube -->
+    <section id="feeds-section">
+      <div>
+        <h3>Latest from our Facebook</h3>
+        <div class="fb-page"
+          data-href="https://www.facebook.com/footandball.academy"
+          data-tabs="timeline"
+          data-width="100%"
+          data-height="440"
+          data-small-header="true"
+          data-adapt-container-width="true"
+          data-hide-cover="true"
+          data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/footandball.academy" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/footandball.academy">Foot and Ball Academy Facebook</a>
+          </blockquote>
         </div>
       </div>
-      <div class="col-lg-6 col-md-12 d-flex">
-        <div class="section-card text-center d-flex flex-column justify-content-center">
-          <h3>Latest from our YouTube</h3>
-          <iframe width="100%" height="500" src="https://www.youtube.com/embed?listType=user_uploads&list=footandballacademy"
-            title="YouTube channel videos" frameborder="0"
+      <div>
+        <h3>Latest from our YouTube</h3>
+        <div class="youtube-embed" style="flex-grow: 1;">
+          <iframe
+            src="https://www.youtube.com/embed?listType=user_uploads&list=footandballacademy"
+            title="YouTube channel feed"
+            frameborder="0"
+            allowfullscreen
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            style="height: 440px; width: 100%;">
+          </iframe>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <!-- Footer Section - drastically reduced height -->
-  <footer style="background-color: #4274AD; color: white; text-align: center; padding: 1.5rem 0;">
-    <div id="foot-placeholder"></div>
+  <!-- Footer Section -->
+  <footer>
+    Football is the World Game. Foot and Ball Academy is proud to be a part of that.
   </footer>
 
   <!-- JS Script includes: jQuery, Popper, Bootstrap, UIKit -->
@@ -201,11 +220,16 @@
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
 
+  <!-- Facebook SDK root for Facebook feed plugin -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
+    nonce="FBSDK"></script>
+
   <!-- Load navbar and footer HTML dynamically -->
   <script>
     $(document).ready(function () {
       $("#nav-placeholder").load("navbar.html");
-      $("#foot-placeholder").load("footer.html");
     });
   </script>
 
