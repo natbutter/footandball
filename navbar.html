@@ -1,17 +1,18 @@
 <!-- Navbar Section Start -->
-<nav class="navbar navbar-expand-lg navbar-light py-0" style="background-color: #4274AD; box-shadow: 0 2px 5px rgba(0,0,0,0.15);"
-  uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light py-0" style="background-color: #4274AD; box-shadow: 0 2px 5px rgba(0,0,0,0.15);" uk-sticky="top:100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
+  <div class="container" style="flex-wrap: nowrap;">
+
     <a href="index.html" class="navbar-brand" style="font-family: 'Open Sans', sans-serif;">
       <img src="./img/AssetsMan.png" class="img-fluid p-0" style="height: 40px;">
       <img src="./img/AssetsTitle.png" class="img-fluid p-0" style="height: 40px;">
     </a>
+
     <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navBar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-between" id="navBar">
-      <ul class="navbar-nav justify-content-center" style="font-family: 'Open Sans', sans-serif;">
 
+    <div class="collapse navbar-collapse" id="navBar">
+      <ul class="navbar-nav justify-content-center" style="font-family: 'Open Sans', sans-serif;">
         <li class="nav-item" style="margin: 0 15px;">
           <a class="nav-link" href="help_im_new.html" 
              style="color: white;" 
@@ -20,7 +21,6 @@
              Help! I'm New
           </a>
         </li>
-
         <li class="nav-item" style="margin: 0 15px;">
           <a class="nav-link" href="OurPhilosophy.html" 
              style="color: white;" 
@@ -29,7 +29,6 @@
              Coaching Philosophy
           </a>
         </li>
-
         <li class="nav-item" style="margin: 0 15px;">
           <a class="nav-link" href="academy.html" 
              style="color: white;" 
@@ -45,10 +44,10 @@
             About Us
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Staff.html">Academy Staff</a>
+            <a class="dropdown-item" href="ContactUs.html">Contact Us</a>
+            <a class="dropdown-item" href="Staff.html">Staff</a>
             <a class="dropdown-item" href="Privacy.html">Privacy</a>
             <a class="dropdown-item" href="TOS.html">Terms and Conditions</a>
-            <a class="dropdown-item" href="ContactUs.html">Contact Us</a>
           </div>
         </li>
 
@@ -57,16 +56,12 @@
             <b>Register Now</b>
           </a>
         </li>
-
-        <!-- Phone number, desktop only -->
-        <li class="nav-item d-none d-lg-block" style="margin-left: 20px;">
-        <a href="tel:+61400123456" class="navbar-text text-white ml-3" style="white-space: nowrap; font-weight: 500; text-decoration: none;">
-        📞 +61 400 123 456
-        </a>
-
-        </li>
-
       </ul>
+
+      <!-- Phone number on far right -->
+      <a href="tel:+61400123456" class="navbar-text text-white ml-auto" style="white-space: nowrap; font-weight: 600; font-size: 1rem; text-decoration: none; padding-left: 15px;">
+        📞 +61 400 123 456
+      </a>
     </div>
   </div>
 </nav>
