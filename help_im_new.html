@@ -17,70 +17,52 @@
       padding: 10px;
     }
 
+    .intro-box {
+      background-color: #f0f4f8;
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
     .toc a {
       display: block;
       margin-bottom: 0.5rem;
-      color: #4274AD;
-      text-decoration: none;
-    }
-
-    .toc a:hover {
-      text-decoration: underline;
-      color: #2a4f7d;
     }
 
     .uk-accordion-title {
-      font-size: 1.25rem;
-      font-weight: bold;
+      font-size: 1.2rem;
+      font-weight: 600;
     }
 
-    #about {
-      background-color: #f0f4f8;
+    .uk-accordion-content p {
+      margin-bottom: 1rem;
     }
 
-    .inner-overlay {
-      padding: 2rem;
-      background-color: rgba(255, 255, 255, 0.75);
-      border-radius: 1rem;
-    }
-
-    .section-card {
-      background: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      margin-bottom: 2rem;
+    .uk-accordion-content {
+      line-height: 1.7;
     }
   </style>
 </head>
 
 <body>
-  <!-- Nav Section Start -->
+  <!-- Navbar -->
   <div id="nav-placeholder"></div>
-  <!-- Nav Section End -->
 
-<!-- Intro Section Start -->
-<section id="about" class="text-center py-5 text-dark">
-  <div class="inner-overlay">
+  <section id="intro" class="py-5">
     <div class="container">
-      <h1 class="mb-4">Help! I’m new.</h1>
-      <p class="lead">
-        If you’re a parent or guardian located in the Hawkesbury area (or nearby!), searching out coaching for your child in football you’ve come to the right place.
-      </p>
-      <p class="lead">
-        Whether you’re new to the game or you played yourself this page is designed to help.
-      </p>
-    </div>
-  </div>
-</section>
+      <div class="intro-box text-center">
+        <h1 class="mb-4">Help! I’m new.</h1>
+        <p class="lead">
+          If you’re a parent or guardian located in the Hawkesbury area (or nearby!), searching out coaching for your child in football you’ve come to the right place.
+        </p>
+        <p class="lead">
+          Whether you’re new to the game or you played yourself this page is designed to help.
+        </p>
+      </div>
 
-  <!-- Intro Section End -->
-
-  <!-- Table of Contents -->
-  <section class="container my-5">
-    <div class="section-card">
-      <h3>Quick Navigation</h3>
-      <div class="toc">
+      <div class="mb-5 toc">
+        <h4 class="mb-3">Quick Navigation</h4>
         <a href="#why-us">Why Us?</a>
         <a href="#player-expectations">Player Expectations</a>
         <a href="#academy-environment">Academy Environment</a>
@@ -89,85 +71,84 @@
         <a href="#pricing">Pricing</a>
         <a href="#attendance">Attendance</a>
       </div>
+
+      <ul uk-accordion="multiple: true" class="uk-accordion">
+
+        <li>
+          <a class="uk-accordion-title" href="#" id="why-us">Why Us?</a>
+          <div class="uk-accordion-content">
+            <p>Currently, the Australian football grassroots (i.e. U18 and below) landscape is a volunteer-centric one. As a community, we look to adult volunteers to surrender what limited free time they have, to fill the many ranks of coaches needed for our young children enrolling in competition teams for the duration of their youth playing experience.</p>
+            <p>Whilst admirable, this model has its cavities. One of these is what I refer to as the “coach’s lottery.” When signed up to a local team the first question is always: Is my child’s coach a volunteer parent who knows what they are doing and what is expected of them as a coach... or... is it a ‘draw-the-short-straw’ type of environment where no parent has any experience and no one is confident to coach.</p>
+            <p>Meanwhile, time goes by. Your child has been signed up to engage in the experience of committing to a team, whilst that team is meant to reciprocate that commitment through developing your child as an individual and as a proper player within the team.</p>
+            <p>This is not happening for your child. You recognise your child’s time could be invested other ways. Time is already running out, especially if ambition to play at higher levels begins to express itself in the player.</p>
+          </div>
+        </li>
+
+        <li>
+          <a class="uk-accordion-title" href="#" id="player-expectations">Player Expectations</a>
+          <div class="uk-accordion-content">
+            <p>The Academy has coached 100+ players so far in its nearly three years of existence and through this an ‘ideal’ Academy recruit has emerged.</p>
+            <p>A child that is keen, engaged, and most importantly highly interested in the game of football.</p>
+            <p>We find the bulk of our customers are parents and players who have grown discontent with the 'coach’s lottery' and wish to enrol in an environment that guarantees problem-solving and proper learning, whilst replicating an intensity and hardwork... consistently.</p>
+            <p>Any player who joins us is expected to be polite, demonstrate humility, be hardworking, humble, and happy to be with us.</p>
+          </div>
+        </li>
+
+        <li>
+          <a class="uk-accordion-title" href="#" id="academy-environment">Academy Environment</a>
+          <div class="uk-accordion-content">
+            <p>“Tough but fair.” This is the term that has been mentioned a couple of times by current members of our Academy. The Academy playing environment is very different from the broader Australian landscape. A key point of difference we wish to highlight.</p>
+            <p>“Tough” – As mentioned above, we expect 100% effort and concentration from every player for the duration of training. Discipline is key. Obvious exceptions include injury and illness. We forbid clearances of any kind. “Just boot it” or “get it out of there” are terms for the birds! Not our players at any time!</p>
+            <p>We forbid game management and in-game time wasting of any kind. i.e. letting the ball intentionally roll out to secure a goal kick or corner or throw in. Keep the ball in play!</p>
+            <p>We challenge the player in multiple different areas/positions on the field.</p>
+            <p>“Fair” - There is no winning or losing.</p>
+            <p>In brief, we strongly advocate for the argument that performance-based outcomes is an adult concept and should not be introduced to players before ~U15’s. As such, players that attend this Academy count no scorelines, receive no ranks, there are no leagues, ladders, “tournaments” or trophies.</p>
+            <p>Mistakes are encouraged, not condemned. There is a desire to see errors on the ball from players.</p>
+            <p>We constantly push the player to take risks on the ball and improve. Kids want to play! They want adults to support that.</p>
+            <p>Patience. The development demands we place on players are long term i.e. months and years. Not seasons.</p>
+            <p>Finally, we place our own high expectations on session design. We expect our sessions to have very little down-time, maximum engagement and a necessary level of variability in session exercises, keeping things interesting for all players involved.</p>
+          </div>
+        </li>
+
+        <li>
+          <a class="uk-accordion-title" href="#" id="parent-expectations">Parent Expectations</a>
+          <div class="uk-accordion-content">
+            <p>Do not coach your child while they attend the Academy.</p>
+            <p>Your primary task is to ensure they are happy and safe. This does not extend into the realm of making in-game decisions on their behalf.</p>
+            <p>Any concerns with the coaching environment are to be raised with the coaching staff outside of coaching hours.</p>
+            <p>We are an Academy NOT “extra coaching.” We teach in a curriculum style, covering everything the volunteer system leaves to chance. If your child is thriving here, we ask you make the Academy the priority in their extracurricular life. i.e. prioritize attending our session multiple times per week over all other sporting commitments after school hours. (That is ‘ask’ we do not demand).</p>
+            <p>They must reintegrate back into the system at some point, anyway. We hope that is at a higher level based on their improvement.</p>
+          </div>
+        </li>
+
+        <li>
+          <a class="uk-accordion-title" href="#" id="where-when">Where and When?</a>
+          <div class="uk-accordion-content">
+            <p>We have operated across several fields in the Hawkesbury area e.g. Benson’s Lane, Richmond Oval, McQuade Park, Windsor, etc. We are constantly moved. However, it is always very local.</p>
+            <p>For our latest locations and times, best to check our Facebook page or call Nick on 0452 583 279.</p>
+          </div>
+        </li>
+
+        <li>
+          <a class="uk-accordion-title" href="#" id="pricing">Pricing</a>
+          <div class="uk-accordion-content">
+            <p>If you get to this point and are interested, call Nick on 0452 583 279.</p>
+          </div>
+        </li>
+
+        <li>
+          <a class="uk-accordion-title" href="#" id="attendance">Attendance</a>
+          <div class="uk-accordion-content">
+            <p>Two sessions a week is highly recommended at this Academy. Not too little, not too much.</p>
+          </div>
+        </li>
+
+      </ul>
     </div>
   </section>
 
-  <!-- Info Accordion Section -->
-  <section class="container mb-5">
-    <div class="uk-accordion" uk-accordion="multiple: true">
-      <div class="section-card" id="why-us">
-        <a class="uk-accordion-title" href="#">Why Us?</a>
-        <div class="uk-accordion-content">
-          <p>Currently, the Australian football grassroots (i.e. U18 and below) landscape is a volunteer-centric one...</p>
-          <p>Whilst admirable, this model has its cavities...</p>
-          <p>Meanwhile, time goes by...</p>
-          <p>This is not happening for your child...</p>
-        </div>
-      </div>
-
-      <div class="section-card" id="player-expectations">
-        <a class="uk-accordion-title" href="#">Player Expectations</a>
-        <div class="uk-accordion-content">
-          <p>The Academy has coached 100+ players so far...</p>
-          <p>A child that is keen, engaged...</p>
-          <p>We find the bulk of our customers are parents...</p>
-          <p>Any player who joins us is expected to be polite...</p>
-        </div>
-      </div>
-
-      <div class="section-card" id="academy-environment">
-        <a class="uk-accordion-title" href="#">Academy Environment</a>
-        <div class="uk-accordion-content">
-          <p>“Tough but fair.” This is the term that has been mentioned...</p>
-          <p>“Tough” – As mentioned above, we expect 100% effort...</p>
-          <p>We forbid game management and in-game time wasting...</p>
-          <p>We challenge the player in multiple areas...</p>
-          <p>“Fair” - There is no winning or losing...</p>
-          <p>In brief, we strongly advocate...</p>
-          <p>Mistakes are encouraged, not condemned...</p>
-          <p>Patience. The development demands we place...</p>
-          <p>Finally, we place our own high expectations...</p>
-        </div>
-      </div>
-
-      <div class="section-card" id="parent-expectations">
-        <a class="uk-accordion-title" href="#">Parent Expectations</a>
-        <div class="uk-accordion-content">
-          <p>Do not coach your child while they attend the Academy.</p>
-          <p>Your primary task is to ensure they are happy and safe...</p>
-          <p>Any concerns with the coaching environment...</p>
-          <p>We are an Academy NOT “extra coaching.”...</p>
-          <p>They must reintegrate back into the system...</p>
-        </div>
-      </div>
-
-      <div class="section-card" id="where-when">
-        <a class="uk-accordion-title" href="#">Where and When?</a>
-        <div class="uk-accordion-content">
-          <p>We have operated across several fields in the Hawkesbury area...</p>
-          <p>For our latest locations and times, best to check our Facebook page...</p>
-        </div>
-      </div>
-
-      <div class="section-card" id="pricing">
-        <a class="uk-accordion-title" href="#">Pricing</a>
-        <div class="uk-accordion-content">
-          <p>If you get to this point and interested, call Nick on 0452 583 279.</p>
-        </div>
-      </div>
-
-      <div class="section-card" id="attendance">
-        <a class="uk-accordion-title" href="#">Attendance</a>
-        <div class="uk-accordion-content">
-          <p>Two sessions a week is highly recommended at this Academy...</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Section Start -->
+  <!-- Footer -->
   <div id="foot-placeholder"></div>
-  <!-- Footer Section End -->
 
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/popper.min.js"></script>
