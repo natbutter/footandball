@@ -17,26 +17,33 @@
       padding: 10px;
     }
 
-    /* Style collapsible headers consistently */
+    /* Match collapsible header styling exactly */
+    .card.section-card {
+      padding: 0;
+      margin-bottom: 1rem;
+      box-shadow: none;
+      background: transparent;
+    }
+
     .card-header {
-      background-color: #f8f9fa; /* light gray background */
-      padding: 1rem 1.25rem;     /* consistent padding */
+      background-color: #ffffff;
       border-radius: 8px;
-      border: 1px solid #dee2e6;
-      margin-bottom: 0.5rem;
+      padding: 1rem 2rem;
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
     }
 
     .card-header a {
-      display: block;
       font-weight: 600;
       color: #212529;
       text-decoration: none;
+      display: block;
     }
 
     .card-header a:hover,
     .card-header a:focus {
+      color: #0d6efd;
       text-decoration: none;
-      color: #0d6efd; /* Bootstrap primary blue */
     }
   </style>
 </head>
