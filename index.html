@@ -19,12 +19,13 @@
       font-family: Arial, sans-serif;
       line-height: 1.6;
       background-color: #f4f4f4;
-      padding-top: 70px; /* push content below navbar */
+      /* padding-top removed to allow navbar to sit at very top */
     }
 
-    /* Main container padding */
+    /* Main container padding with top margin instead of body padding */
     .main-section {
       padding: 50px 15px 30px;
+      margin-top: 70px; /* space BELOW navbar */
     }
 
     /* Flex equal height row for top 3 columns */
@@ -39,7 +40,6 @@
       background: transparent;
       display: flex;
       flex-direction: column;
-      /* allow flexible height, but controlled below */
     }
 
     /* Section card style */
@@ -129,7 +129,6 @@
       font-weight: 600;
       font-size: 1.25rem;
     }
-
   </style>
 </head>
 
@@ -146,8 +145,7 @@
           <h3>Our Mission</h3>
           <p>We are an educational establishment focused on long-term individual player development.</p>
           <p>Think of us like a “primary school” for football, i.e., six y/o to 12 y/o.</p>
-          <p>Due to time and staffing restrictions, we currently only offer elite level sessions targeting ambitious
-            players hungry to improve.</p>
+          <p>Due to time and staffing restrictions, we currently only offer elite level sessions targeting ambitious players hungry to improve.</p>
           <a href="register.html" class="btn btn-info btn-register">Register Now</a>
         </div>
       </div>
