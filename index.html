@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Meta and title -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Foot and Ball Academy</title>
 
-  <!-- Stylesheets: Bootstrap, UIKit, and local main.css -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/uikit.min.css" />
   <link rel="stylesheet" href="css/main.css" />
 
-  <!-- Inline styles for layout and specific components -->
   <style>
-    /* Body base styles */
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
       background-color: #f4f4f4;
+      line-height: 1.6;
     }
 
-    /* Main container padding */
     .main-section {
       padding: 50px 15px;
     }
 
-    /* Card style for content boxes */
     .section-card {
       background-color: #ffffff;
       padding: 20px;
@@ -36,103 +30,107 @@
       height: 100%;
     }
 
-    /* Register button margin */
-    .btn-register {
-      margin-top: 15px;
-    }
-
-    /* Facebook container and map section layout */
-    .fb-container,
-    #map-section {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    /* Facebook page plugin sizing */
-    .fb-page {
-      flex-grow: 1;
+    .fb-page, .yt-feed iframe {
+      width: 100% !important;
+      border-radius: 8px;
       min-height: 400px;
       max-height: 600px;
-      width: 100% !important;
-    }
-
-    /* Iframe base styling */
-    iframe {
-      width: 100% !important;
-      max-width: 100%;
-      border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Specifically set Google map iframe height */
+    iframe {
+      max-width: 100%;
+      border: 0;
+    }
+
     #map-section iframe {
       height: 500px !important;
     }
 
-    /* Margins for map section */
     #map-section {
-      margin-top: 30px;
-      margin-bottom: 50px;
+      margin: 0;
+      padding: 0 15px;
     }
 
-    /* Center text inside map section headings and paragraphs */
     #map-section h3,
     #map-section p {
       text-align: center;
     }
 
-    /* Additional styling for map iframe */
-    #map-section iframe {
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Center text and flex alignment for section cards */
     .section-card.text-center {
       align-items: center;
       justify-content: center;
       text-align: center;
     }
 
+    .dual-feeds {
+      margin: 30px 0;
+    }
+
+    .footer-cta {
+      background-color: #4274AD;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Facebook SDK root for Facebook feed plugin -->
+  <!-- Facebook SDK -->
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous"
     src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
     nonce="FBSDK"></script>
 
-  <!-- Navbar placeholder - loaded dynamically via jQuery -->
+  <!-- Navbar placeholder -->
   <div id="nav-placeholder"></div>
 
-  <!-- Main content section container -->
   <main class="main-section container">
-    <div class="row d-flex align-items-stretch">
-      <!-- Left Column: Our Mission Card -->
+
+    <!-- Middle Row: Mission | Map | Founder -->
+    <div class="row align-items-stretch">
       <div class="col-lg-3 col-md-6 d-flex">
         <div class="section-card text-center d-flex flex-column justify-content-center">
           <h3>Our Mission</h3>
-          <p>We are an educational establishment focused on long-term individual player development.</p>
-          <p>Think of us like a “primary school” for football, i.e., six y/o to 12 y/o.</p>
-          <p>Due to time and staffing restrictions, we currently only offer elite level sessions targeting ambitious
-            players hungry to improve.</p>
-          <a href="register.html" class="btn btn-info btn-register">Register Now</a>
+          <p>Helping young players grow through purposeful football education.</p>
         </div>
       </div>
 
-      <!-- Middle Column: Facebook Feed -->
       <div class="col-lg-6 col-md-12 d-flex">
-        <div class="fb-container text-center flex-fill d-flex flex-column">
-          <h3>Latest from our Facebook</h3>
-          <div class="fb-page flex-grow-1"
+        <div class="section-card d-flex flex-column w-100">
+          <h3 class="text-center">Find Us</h3>
+          <p class="text-center">McQuade Park<br />Entry off Tebbutt Street, Windsor, NSW 2756</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.0376535072251!2d150.81278093372703!3d-33.60963318454133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0d6289c228e761%3A0xf017d68f9f15730!2sMcQuade%20Park!5e1!3m2!1sen!2sau!4v1754127213533!5m2!1sen!2sau"
+            width="100%" height="300" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex">
+        <div class="section-card text-center d-flex flex-column align-items-center">
+          <h3>Meet Our Founder</h3>
+          <p>Nick has dedicated Foot and Ball Academy to incorporating the latest trends in football education
+            from around the world.</p>
+          <p>He always ensures our philosophies, curriculums, and session designs have global citations.</p>
+          <a target="_blank" href="Staff.html">
+            <img src="./img/nick.jpg" alt="Nick - Founder" class="img-fluid rounded-circle" style="max-width: 150px;" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Feeds: Facebook and YouTube -->
+    <div class="row dual-feeds">
+      <div class="col-lg-6 col-md-12">
+        <div class="section-card">
+          <h4 class="text-center">Facebook Feed</h4>
+          <div class="fb-page"
             data-href="https://www.facebook.com/footandball.academy"
             data-tabs="timeline"
             data-width="100%"
-            data-height="500"
+            data-height="400"
             data-small-header="true"
             data-adapt-container-width="true"
             data-hide-cover="true"
@@ -144,65 +142,43 @@
         </div>
       </div>
 
-      <!-- Right Column: Meet Our Founder Card -->
-      <div class="col-lg-3 col-md-6 d-flex">
-        <div class="section-card text-center d-flex flex-column align-items-center">
-          <h3>Meet Our Founder</h3>
-          <p>Nick has dedicated Foot and Ball Academy to incorporating the latest trends in football education
-            from around the world.</p>
-          <p>He always ensures our philosophies, curriculums, and session designs have global citations.</p>
-          <a target="_blank" href="Staff.html">
-            <img src="./img/nick.jpg" alt="Nick - Founder" class="img-fluid rounded-circle"
-              style="max-width: 150px;" />
-          </a>
+      <div class="col-lg-6 col-md-12">
+        <div class="section-card yt-feed">
+          <h4 class="text-center">YouTube Feed</h4>
+          <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=YOUR_CHANNEL_NAME"
+            allowfullscreen></iframe>
         </div>
       </div>
     </div>
+
   </main>
 
-  <!-- Map Section showing location -->
-  <section id="map-section" class="container my-5">
-    <h3 class="text-center">Find Us</h3>
-    <p class="text-center">McQuade Park<br />Entry off Tebbutt Street, Windsor, NSW 2756</p>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8">
-        <!-- Embedded Google Map iframe -->
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d994.0376535072251!2d150.81278093372703!3d-33.60963318454133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b0d6289c228e761%3A0xf017d68f9f15730!2sMcQuade%20Park!5e1!3m2!1sen!2sau!4v1754127213533!5m2!1sen!2sau"
-          width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Get Started Section with call to action -->
-  <section id="get-started" style="background-color: #4274AD; color: white; padding: 3rem 0; text-align: center; background-image: none !important;">
+  <!-- Footer CTA -->
+  <section class="footer-cta">
     <div class="container">
-      <h3 style="font-size: 2.5rem; font-weight: bold; margin-bottom: 1rem;">Football is the World Game.</h3>
+      <h3 style="font-size: 2rem; font-weight: bold; margin-bottom: 1rem;">Football is the World Game.</h3>
       <p style="font-size: 1.25rem;">Foot and Ball Academy is proud to be a part of that.</p>
     </div>
   </section>
 
-  <!-- Footer Section - dynamically loaded -->
+  <!-- Footer -->
   <footer style="background-color: #000; color: white; text-align: center; padding: 1rem 0;">
     <div id="foot-placeholder"></div>
   </footer>
 
-  <!-- JS Script includes: jQuery, Popper, Bootstrap, UIKit -->
+  <!-- Scripts -->
   <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
 
-  <!-- Load navbar and footer HTML dynamically -->
+  <!-- Dynamic Navbar and Footer -->
   <script>
     $(document).ready(function () {
       $("#nav-placeholder").load("navbar.html");
       $("#foot-placeholder").load("footer.html");
     });
   </script>
-
 </body>
-
 </html>
