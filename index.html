@@ -15,7 +15,7 @@
     /* Body padding to clear fixed navbar + breathing room */
     body {
       background-color: #f4f4f4;
-      padding-top: 80px; /* Increased for more gap on desktop & tablet */
+      padding-top: 120px; /* Increased for more gap on desktop & tablet */
     }
 
     .top-row {
@@ -113,25 +113,38 @@
     }
 
     /* TABLET (≥576px and <992px) */
-    @media (min-width: 576px) and (max-width: 991.98px) {
-      .our-mission-wrapper {
-        margin-top: 1.5rem !important; /* space below navbar only for Our Mission */
-      }
+@media (min-width: 576px) and (max-width: 991.98px) {
+  /* Keep your existing margin-top and margin-bottom adjustments */
+  .our-mission-wrapper {
+    margin-top: 1.5rem !important; /* space below navbar only for Our Mission */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* or flex-start if you want top alignment */
+  }
 
-      /* Find Us stacked below Our Mission, no margin-top */
-      .find-us-wrapper {
-        margin-top: 0 !important;
-      }
+  /* Find Us stacked below Our Mission, no margin-top */
+  .find-us-wrapper {
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-      /* Meet Founder stacked under Find Us, margin-top */
-      .meet-founder-wrapper {
-        margin-top: 1.5rem !important;
-      }
+  /* Meet Founder stacked under Find Us, margin-top */
+  .meet-founder-wrapper {
+    margin-top: 1.5rem !important;
+  }
 
-      .feed-block {
-        margin-bottom: 0 !important;
-      }
-    }
+  .feed-block {
+    margin-bottom: 0 !important;
+  }
+
+  /* Make the first row a flex container to align columns */
+  .row.g-4.mb-5:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
     /* DESKTOP (≥992px) */
     @media (min-width: 992px) {
