@@ -91,13 +91,21 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* === Responsive margins and layout fixes === */
+/* UNIFORM TOP SPACING FOR FIRST ROW COLUMNS (ALL DEVICES) */
+.our-mission-wrapper,
+.founder-wrapper,
+.fb-wrapper {
+  margin-top: 120px; /* generous top margin to clear navbar + align cols */
+}
 
-    /* MOBILE (<576px) */
-    @media (max-width: 575.98px) {
-      .our-mission-wrapper {
-        margin-top: 1rem !important; /* breathing so toggler clickable */
-      }
+/* FIX: REDUCE TOP SPACING ON SMALL SCREENS IF NEEDED */
+@media (max-width: 575.98px) {
+  .our-mission-wrapper,
+  .founder-wrapper,
+  .fb-wrapper {
+    margin-top: 100px; /* slightly less on small screens */
+  }
+}
 
       .find-us-wrapper {
         margin-top: 1.5rem !important;
