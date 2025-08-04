@@ -5,18 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Foot and Ball Academy</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.12/dist/css/uikit.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/main.css" />
+
   <style>
-    /* Ensure body padding to avoid navbar toggler being blocked */
+    /* Body padding to clear fixed navbar + breathing room */
     body {
       background-color: #f4f4f4;
-      padding-top: 56px; /* Height of fixed navbar */
+      padding-top: 80px; /* Increased for more gap on desktop & tablet */
     }
 
-    /* Navbar fixed on top with high z-index */
+    /* Fixed navbar styles with z-index */
     .navbar {
       position: fixed;
       top: 0;
@@ -24,12 +26,22 @@
       z-index: 1030;
     }
 
+    /* Section card styling */
     .section-card {
       background-color: white;
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Normalize h3 size inside cards */
+    .section-card h3 {
+      font-size: 1.5rem; /* ~24px */
+      margin-bottom: 1rem;
+      font-weight: 600;
     }
 
     /* Map iframe styling */
@@ -42,12 +54,13 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    /* Button margin */
+    /* Register button margin */
     .btn-register {
       margin-top: 15px;
+      align-self: center;
     }
 
-    /* Footer styling overrides to fix font size and appearance */
+    /* Footer styling */
     footer {
       background-color: #4274AD;
       color: white;
@@ -58,12 +71,28 @@
       margin: 0;
     }
 
-    /* Responsive spacing fixes */
+    /* Make Facebook feed fill its container and scale nicely */
+    .fb-page {
+      width: 100% !important;
+      flex-grow: 1;
+      min-height: 440px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    /* YouTube iframe fill */
+    .ratio iframe {
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* === Responsive margins and layout fixes === */
 
     /* MOBILE (<576px) */
     @media (max-width: 575.98px) {
       .our-mission-wrapper {
-        margin-top: 1rem !important; /* give breathing so navbar toggler clickable */
+        margin-top: 1rem !important; /* breathing so toggler clickable */
       }
 
       .find-us-wrapper {
@@ -81,13 +110,18 @@
 
     /* TABLET (≥576px and <992px) */
     @media (min-width: 576px) and (max-width: 991.98px) {
-      .our-mission-wrapper,
-      .meet-founder-wrapper {
-        margin-top: 1.5rem !important;
+      .our-mission-wrapper {
+        margin-top: 1.5rem !important; /* space below navbar only for Our Mission */
       }
 
+      /* Find Us stacked below Our Mission, no margin-top */
       .find-us-wrapper {
-        margin-top: 0 !important; /* directly below Our Mission */
+        margin-top: 0 !important;
+      }
+
+      /* Meet Founder stacked under Find Us, margin-top */
+      .meet-founder-wrapper {
+        margin-top: 1.5rem !important;
       }
 
       .feed-block {
@@ -113,6 +147,7 @@
   <div id="nav-placeholder"></div>
 
   <main class="container mt-4">
+    <!-- Top section with three columns -->
     <div class="row g-4 mb-5">
       <div class="col-12 col-md-6 col-lg-3 our-mission-wrapper">
         <div class="section-card text-center h-100 mb-4 mb-md-3 mb-lg-0">
@@ -150,22 +185,23 @@
       </div>
     </div>
 
+    <!-- Bottom section with Facebook and YouTube feeds -->
     <div class="row g-4 mb-5">
       <div class="col-12 col-md-6">
-        <div class="section-card text-center h-100 mb-4 mb-md-0 feed-block">
+        <div class="section-card text-center h-100 mb-4 mb-md-0 feed-block d-flex flex-column">
           <h3>Latest from our YouTube</h3>
-          <div class="ratio ratio-16x9">
+          <div class="ratio ratio-16x9 flex-grow-1">
             <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=FootandBall_Academy"
               title="YouTube video feed" allowfullscreen></iframe>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6">
-        <div class="section-card text-center h-100 mb-4 mb-md-0 feed-block">
+      <div class="col-12 col-md-6 d-flex flex-column">
+        <div class="section-card text-center h-100 mb-4 mb-md-0 feed-block d-flex flex-column">
           <h3>Latest from our Facebook</h3>
-          <div class="fb-page" data-href="https://www.facebook.com/footandball.academy" data-tabs="timeline" data-width=""
-            data-height="440" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true"
-            data-show-facepile="false">
+          <div class="fb-page flex-grow-1" data-href="https://www.facebook.com/footandball.academy" data-tabs="timeline"
+            data-width="" data-height="440" data-small-header="true" data-adapt-container-width="true"
+            data-hide-cover="true" data-show-facepile="false">
             <blockquote cite="https://www.facebook.com/footandball.academy" class="fb-xfbml-parse-ignore">
               <a href="https://www.facebook.com/footandball.academy">Foot and Ball Academy Facebook</a>
             </blockquote>
@@ -175,9 +211,8 @@
     </div>
   </main>
 
-  <!-- Footer Section Start -->
+  <!-- Footer placeholder -->
   <div id="foot-placeholder"></div>
-  <!-- Footer Section End -->
 
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous"
