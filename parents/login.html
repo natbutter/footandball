@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parent Login - Foot and Ball Academy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="nav-placeholder"></div>
+
+<!-- Main Content -->
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+  <div class="card p-4 shadow" style="max-width: 400px; width: 100%;">
+    <h3 class="text-center mb-3">Parent Login</h3>
+    <div class="mb-3">
+      <input type="password" id="password" class="form-control" placeholder="Enter password">
+    </div>
+    <div id="error" class="text-danger mb-3"></div>
+    <button onclick="login()" class="btn btn-primary w-100">Log In</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<div id="foot-placeholder"></div>
+
+<script>
+  $(function() {
+    $("#nav-placeholder").load("../nav.html");
+    $("#foot-placeholder").load("../footer.html");
+  });
+</script>
+<script src="auth.js"></script>
+</body>
+</html>
