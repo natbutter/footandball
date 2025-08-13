@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../main.css">
 <link rel="stylesheet" href="style.css"> <!-- parents page tweaks -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery.min.js"></script>
 </head>
 <body>
 
@@ -26,12 +26,12 @@
   </div>
 </div>
 
-<!-- Footer -->
+<div id="nav-placeholder"></div>
 <div id="foot-placeholder"></div>
 
 <script>
-  $(function() {
-    $("#nav-placeholder").load("../nav.html");
+  $(function(){
+    $("#nav-placeholder").load("../navbar.html");
     $("#foot-placeholder").load("../footer.html");
   });
 </script>
