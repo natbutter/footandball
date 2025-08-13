@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Academy Updates - Foot and Ball Academy</title>
-  
+
   <!-- Local CSS -->
   <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="style.css"> <!-- parents page tweaks -->
 
   <!-- jQuery local -->
@@ -23,7 +23,7 @@
   <div class="container my-5">
     <h2 class="mb-4">Academy Updates</h2>
     <div id="updates-container" class="p-3 bg-white shadow rounded">
-      <!-- Loaded from updates.html -->
+      <!-- Loaded from updates.html via auth.js -->
     </div>
   </div>
 
@@ -35,7 +35,7 @@
     $(function(){
       $("#nav-placeholder").load("../navbar.html");
       $("#foot-placeholder").load("../footer.html");
-      checkLogin();  // enforce password
+      checkLogin();  // enforce password protection
     });
   </script>
 
