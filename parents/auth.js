@@ -1,6 +1,6 @@
 // ===== CONFIGURATION =====
 const TERM_PASSWORD = "2026-term1"; // Change each term
-const EXPIRY_DATE = new Date("2025-10-15T23:59:59"); // End of term
+const EXPIRY_DATE = new Date("2026-04-02T23:59:59"); // End of term
 
 // ===== LOGIN FUNCTION =====
 function login() {
