@@ -1,5 +1,5 @@
 // ===== CONFIGURATION =====
-const TERM_PASSWORD = "t3_25_client"; // Change each term
+const TERM_PASSWORD = "2026-term1"; // Change each term
 const EXPIRY_DATE = new Date("2025-10-15T23:59:59"); // End of term
 
 // ===== LOGIN FUNCTION =====
