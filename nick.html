@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+  <title>Nick Barnett-Moore | Foot and Ball Academy</title>
+</head>
+
+<body>
+
+  <!-- Nav -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Title -->
+  <section id="intro" class="py-5">
+    <div class="container">
+      <div class="intro-box text-center">
+        <h1 class="mb-4">Nick Barnett-Moore</h1>
+        <p class="lead">Founder & Head Coach</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <div class="container my-5">
+    <div class="accordion" id="nickAccordion">
+
+      <!-- Bio -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-primary" data-toggle="collapse" data-target="#bio" aria-expanded="true">
+              Coaching Philosophy & Background
+            </button>
+          </h2>
+        </div>
+        <div id="bio" class="collapse show" data-parent="#nickAccordion">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-8">
+                <p class="lead">
+                  My background and pathway into coaching is rather unorthodox having chose to enter the industry at a later stage in life.
+                  Well-travelled and educated, I believe my life experiences outside of football will contribute as much as my player experiences to coaching.
+                  I have reflected carefully on my motivations for making this career choice, and want to ensure everyone that my main goal is to provide a coaching environment I now realise is important,
+                  and never received in my youth. e.g. development over winning.
+                </p>
+
+                <p class="lead">
+                  I have been described by some parents as 'tough but fair.' I sincerely want the best for whoever I coach because I am aware of how competitive it is out there.
+                  I believe every child should be prepared to feel confident and composed playing against and amongst a wide range of their peers in any environment.
+                </p>
+
+                <p class="lead">See you on the fields! Coach Nick.</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="img/nick.jpg" class="img-fluid rounded-circle" style="max-width:200px;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Playing History -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-primary collapsed" data-toggle="collapse" data-target="#playing">
+              Playing History (2000 – 2011)
+            </button>
+          </h2>
+        </div>
+        <div id="playing" class="collapse" data-parent="#nickAccordion">
+          <div class="card-body">
+            <ul class="lead">
+              <li>Representative football (now NPL) from U/13’s.</li>
+              <li>Hawkesbury City FC.</li>
+              <li>Mount Druitt Rangers | Granville Rage.</li>
+              <li>Macarthur Rams.</li>
+              <li>2005 England academy tour.</li>
+              <li>2010 UK semi-professional training.</li>
+              <li>2011 EFL League 2 trial.</li>
+              <li>Early private coaching (Coverciano-style).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teaching -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-primary collapsed" data-toggle="collapse" data-target="#teaching">
+              Teaching History
+            </button>
+          </h2>
+        </div>
+        <div id="teaching" class="collapse" data-parent="#nickAccordion">
+          <div class="card-body">
+            <ul class="lead">
+              <li>Learn to swim instructor (2007–2010).</li>
+              <li>University Lecturer & Tutor (2013–2016).</li>
+              <li>Kids football coach (2022–current).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Qualifications -->
+      <div class="card mb-3">
+        <div class="card-header">
+          <h2 class="mb-0">
+            <button class="btn btn-link text-primary collapsed" data-toggle="collapse" data-target="#quals">
+              Qualifications
+            </button>
+          </h2>
+        </div>
+        <div id="quals" class="collapse" data-parent="#nickAccordion">
+          <div class="card-body">
+            <ul class="lead">
+              <li><a href="./img/Barnett-Moore_WWCC_2022.pdf" target="_blank">Working With Children Check</a></li>
+              <li><a href="./img/Barnett-Moore_C-Licence_2025.JPG" target="_blank">AFC C Licence</a></li>
+              <li><a href="./img/Barnett-Moore_Barca_Qualification.pdf" target="_blank">Barca Coach Academy (FC Barcelona)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="foot-placeholder"></div>
+
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="js/uikit-icons.min.js"></script>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("navbar.html");
+      $("#foot-placeholder").load("footer.html");
+    });
+  </script>
+
+</body>
+</html>
